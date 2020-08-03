@@ -1,0 +1,17 @@
+<form action="sample1.php" method="POST">
+    <h3>年齢</h3>
+    <select name="age">
+        <option value="不明">選んでください</option>
+            <?php
+                for($i=5;$i<=90;$i++){
+                    echo "<option value='{$i}'>$i</option>";
+                }
+            ?>
+    </select>
+    <h3>メールアドレス（必須）</h3>
+    <input type="text" name="email">
+    <h3>お問い合わせ内容（必須）</h3>
+    <textarea name="detail"></textarea>
+      <p>注）必須と書かれている項目は必ず入力してください。</p>
+      <input class="submit" type=submit value=送信>
+</form>
